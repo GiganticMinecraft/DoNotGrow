@@ -9,7 +9,7 @@ import org.bukkit.event.block.BlockGrowEvent
 object BlockGrowListener : Listener {
     @EventHandler
     fun onCactusGrow(event: BlockGrowEvent) {
-        // サボテンの場合、event.getBlockで得られるのはMaterial.AIRなので、そのY座標を負の方向に1ずらしてMaterial.CACTUSかどうかを判定
+        // event.getBlockで得られるのはMaterial.AIR（=成長するサボテンが出現する座標のブロック）なので、Y座標を-1してMaterial.CACTUSかどうかを判定
         val loc = event.block.location.apply { this.y -= 1 }
         val block = loc.block
 
