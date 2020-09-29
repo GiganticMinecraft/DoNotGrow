@@ -1,0 +1,3 @@
+name: DoNotGrow
+version: @version@
+main: click.seichi.donotgrow.DoNotGrow
