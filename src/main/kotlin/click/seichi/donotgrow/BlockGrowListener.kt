@@ -13,10 +13,6 @@ object BlockGrowListener : Listener {
         val loc = event.block.location.apply { this.y -= 1 }
         val block = loc.block
 
-        if (block.type == Material.CACTUS) {
-            event.isCancelled = true
-            Bukkit.getServer().logger.info("CACTUS!")
-            Bukkit.getServer().logger.info(event.isCancelled.toString())
-        }
+        if (block.type == Material.CACTUS) event.isCancelled = true
     }
 }
