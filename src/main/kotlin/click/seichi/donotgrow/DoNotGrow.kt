@@ -1,17 +1,13 @@
-package click.seichi.donotgrow;
+package click.seichi.donotgrow
 
-import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.java.JavaPlugin
 
-public final class DoNotGrow extends JavaPlugin {
+class DoNotGrow : JavaPlugin() {
+    override fun onEnable() {
+        // Plugin startup logic
+    }
 
-  @Override
-  public void onEnable() {
-    // Plugin startup logic
-
-  }
-
-  @Override
-  public void onDisable() {
-    // Plugin shutdown logic
-  }
+    override fun onDisable() {
+        // Plugin shutdown logic
+    }
 }
