@@ -11,6 +11,6 @@ class DoNotGrow : JavaPlugin() {
 
     override fun onEnable() {
         PLUGIN = this
-        Bukkit.getPluginManager().registerEvents(BlockGrowListener, this)
+        Bukkit.getPluginManager().registerEvents(BlockGrowListener(), this)
     }
 }

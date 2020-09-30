@@ -5,7 +5,7 @@ import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.block.BlockGrowEvent
 
-object BlockGrowListener : Listener {
+class BlockGrowListener : Listener {
     @EventHandler
     fun onCactusGrow(event: BlockGrowEvent) {
         // event.getBlockで得られるのはMaterial.AIR（=成長するサボテンが出現する座標のブロック）なので、Y座標を-1してMaterial.CACTUSかどうかを判定
